@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -7,11 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background-color: #000;
   color: #fff;
 }
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,23 +31,23 @@ header{
   font-weight: bold;
 }
 
-nav ul{
+nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
 }
 
-nav a{
+nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover{
+nav a:hover {
   color: #e50914;
 }
 
-.sobre{
+.sobre {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,11 +57,11 @@ nav a:hover{
   background: #000;
 }
 
-.sobre-video{
+.sobre-video {
   position: relative;
 }
 
-.sobre-video img{
+.sobre-video img {
   width: 100%;
   height: 100%;
   filter: grayscale(100%);
@@ -73,7 +73,7 @@ nav a:hover{
   ); /*pesquisei no web dev como fazer essa transição, Pati*/
 }
 
-.sobre-texto{
+.sobre-texto {
   flex: 1 1 50%;
   padding: 40px;
 }
@@ -86,6 +86,12 @@ nav a:hover{
 .sobre-texto p {
   color: #ccc;
   font-size: 1.1rem;
+}
+
+.sobre-texto hr {
+  width: 80px;
+  border: 1px solid #e50914;
+  margin: 10px 0 20px;
 }
 
 .integrantes {
@@ -101,20 +107,20 @@ nav a:hover{
   gap: 8px;
 }
 
-.membros-grid{
+.membros-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 30px;
   justify-items: center;
 }
 
-.membro{
+.membro {
   text-decoration: none;
   color: #fff;
   transition: transform 0.3s ease;
 }
 
-.membro img{
+.membro img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -122,48 +128,47 @@ nav a:hover{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.membro:hover img{
+.membro:hover img {
   transform: scale(1.1);
   box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
 }
 
-.membro p{
+.membro p {
   margin-top: 10px;
   font-weight: bold;
   font-size: 1rem;
   color: #ccc;
 }
 
-.grid-section{
+.grid-section {
   padding: 40px 5%;
 }
 
-.grid-section h2{
+.grid-section h2 {
   margin-bottom: 20px;
   color: #fff;
   font-size: 1.6rem;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 15px;
 }
 
-.grid img{
+.grid img {
   width: 100%;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
 
-.grid img:hover{
+.grid img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
 }
 
-.albuns{
+.albuns {
   padding: 60px 5%;
   background: #111;
   text-align: center;
@@ -181,7 +186,7 @@ nav a:hover{
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
 }
-.album-item{
+.album-item {
   position: relative;
   display: block;
   border-radius: 10px;
